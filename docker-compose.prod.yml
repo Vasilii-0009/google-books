@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: google-books
+    image: google-books
+    build:
+      context: .
+      target: prod
+    ports:
+      - 80:80
