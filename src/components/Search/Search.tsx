@@ -50,7 +50,7 @@ export const Search = ({ handleClickBtnSearch }: ISubmitForm) => {
   //фокус в инпуте
   useEffect(() => {
     if (inputFocus.current) inputFocus.current.focus();
-  }, [navigate, isValueSelect, isValueCategoies]);
+  }, [isValueSelect, isValueCategoies]);
 
   return (
     <header className="search container">
